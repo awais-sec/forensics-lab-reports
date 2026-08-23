@@ -82,6 +82,14 @@ The recorded matching hashes support evidence-integrity verification. Hash match
 
 MD5 and SHA-1 were the algorithms recorded by FTK Imager for this exercise. They are preserved here because they are part of the original acquisition record. For new security-sensitive workflows, algorithm selection should follow the requirements of the forensic tool, organization, and applicable procedures.
 
+### Verification Evidence
+
+The original FTK Imager verification screen recorded matching MD5 and SHA-1 results and reported no bad blocks.
+
+![FTK Imager hash verification results](assets/case-01/hash-verification.svg)
+
+*Figure 1 — FTK Imager Drive/Image Verify Results from the original case report.*
+
 ## Why a Forensic Image?
 
 A forensic image provides an analysis copy of the acquired storage media while preserving the original evidence as the source. Working from an acquired image reduces the need to repeatedly access the original physical device during subsequent examination.
@@ -104,19 +112,9 @@ These results support the integrity verification of the acquired image for this 
 
 ## Evidence Screenshots
 
-The original report contains screenshots documenting the FTK Imager workflow, including:
+The original report contains screenshots documenting the FTK Imager workflow, including physical-drive selection, image-format selection, evidence metadata, destination configuration, acquisition progress, completion, and hash verification.
 
-1. Physical-drive selection
-2. Source-drive selection
-3. E01 image-format selection
-4. Case and evidence metadata
-5. Destination configuration
-6. Acquisition settings summary
-7. Acquisition progress
-8. Acquisition completion
-9. Hash verification
-
-The screenshots should be stored under `assets/case-01/` when they are extracted from the source report so they remain directly viewable from GitHub.
+The repository now embeds the most important verification screenshot directly in the Markdown report. Additional workflow screenshots can be added to `assets/case-01/` as individual image assets during the remaining repository cleanup.
 
 ## Conclusion
 
